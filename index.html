@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=	, initial-scale=1.0" />
+    <title>Overwolf Debug Issue</title>
+  </head>
+  <body style="background: black; color: white">
+    <p>
+      Please open Dev Tools for Console errors and logs. Both issues only happen
+      if `debug_url` is set in manifest.json
+    </p>
+    <h2>1: Overwolf not ready</h2>
+    <p>
+      On first start, Overwolf doesn't seems to be ready if `debug_url` is set.
+      You can reproduce this issue by disable, enable and launch the app. If you
+      reload the window in the developer tools, the error is gone.
+    </p>
+    <code style="color: orangered"
+      >Uncaught ReferenceError: overwolf is not defined at main.js:3</code
+    >
+    <h2>2: Load media</h2>
+    <p>
+      If you try to load media via overwolf:// or file:///, it is blocked if
+      `debug_url` is set. I placed a `test.mp4` in this folder which was
+      recorded with the overwolf replay api. Please move this file to your
+      Overwolf video folder.
+    </p>
+    <video controls width="250">
+      <source src="overwolf://media/replays/test.mp4" type="video/mp4" />
+    </video>
+    <script src="main.js"></script>
+  </body>
+</html>

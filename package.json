@@ -1,0 +1,23 @@
+{
+  "name": "overwolf-debug-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --port=3333 ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmachens/overwolf-debug-issue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmachens/overwolf-debug-issue/issues"
+  },
+  "homepage": "https://github.com/lmachens/overwolf-debug-issue#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
