@@ -1,3 +1,5 @@
+Example for `debug_url` issue. See [Overwolf Discussion](https://discuss.overwolf.com/t/no-file-system-access-with-debug-url-and-reload-issue/1911).
+
 # Setup
 
 First, install dependencies and run the server:
